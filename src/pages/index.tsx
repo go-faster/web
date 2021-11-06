@@ -21,8 +21,8 @@ const HomepageHeader = () => {
                width={105}
                alt="go faster logo"
                sources={{
-                   light: useBaseUrl('logo_white_borderless.svg'),
-                   dark: useBaseUrl('logo_black_borderless.svg'),
+                   light: useBaseUrl('/img/logo_white_borderless.svg'),
+                   dark: useBaseUrl('/img/logo_black_borderless.svg'),
                }}
            />
            go faster

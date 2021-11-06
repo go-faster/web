@@ -15,6 +15,12 @@ const config = {
   organizationName: 'go-faster', // Usually your GitHub org/user name.
   projectName: 'web', // Usually your repo name.
   favicon: 'favicon.ico',
+  scripts: [
+    "https://buttons.github.io/buttons.js",
+    "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
+    "/js/code-block-buttons.js",
+    "/js/custom.js"
+  ],
 
   presets: [
     [
@@ -23,15 +29,16 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/go-faster/web/edit/main/docs/',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   editUrl:
-        //     'https://github.com/gotd/docs/edit/main/blog/',
-        // },
+        /* TODO(ernado): Enable blog back
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/gotd/docs/edit/main/blog/',
+        },
+        */
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -55,11 +62,19 @@ const config = {
             position: 'left',
             label: 'about',
           },
+          // TODO(ernado): Enable blog back
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/go-faster',
-            label: 'GitHub',
+            href: '/docs/slack',
             position: 'right',
+            className: 'header-slack-link',
+            'aria-label': 'Slack channel',
+          },
+          {
+            href: 'https://github.com/go-faster',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },

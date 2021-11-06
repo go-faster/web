@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
+id: about
+title: about
 ---
-
-# about
 
 projects that are cause of high performance
 
