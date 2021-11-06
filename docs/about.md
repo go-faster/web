@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# faster
+# about
 
 projects that are cause of high performance
 
