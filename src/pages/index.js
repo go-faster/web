@@ -30,8 +30,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description="go faster">
+      title="go"
+      description="go">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

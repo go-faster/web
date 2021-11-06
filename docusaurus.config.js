@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'go faster',
+  title: 'faster',
   tagline: 'causing performance',
   url: 'https://go-faster.org',
   baseUrl: '/',
