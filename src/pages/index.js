@@ -13,7 +13,7 @@ function HomepageHeader() {
       <div className="container">
 
        <h1 className="hero__title">
-           <img width="105" src="logo_borderless.svg" alt="go faster logo"/>
+           <img width="105" src="logo_black_borderless.svg" alt="go faster logo"/>
            go faster
        </h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
