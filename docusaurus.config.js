@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   organizationName: 'go-faster', // Usually your GitHub org/user name.
   projectName: 'web', // Usually your repo name.
-  favicon: 'favicon.ico',
+  favicon: 'img/favicon.ico',
   scripts: [
     "https://buttons.github.io/buttons.js",
     "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js",
