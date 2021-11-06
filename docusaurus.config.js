@@ -67,32 +67,32 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'docs',
             items: [
               {
-                label: 'Faster',
-                to: '/docs/faster',
+                label: 'about',
+                to: '/docs/about',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'community',
             items: [
               {
-                label: 'Telegram',
+                label: 'telegram',
                 href: 'https://t.me/go_faster_dev',
               }
             ],
           },
           {
-            title: 'More',
+            title: 'more',
             items: [
               // {
               //   label: 'Blog',
               //   to: '/blog',
               // },
               {
-                label: 'GitHub',
+                label: 'github',
                 href: 'https://github.com/go-faster',
               },
             ],
