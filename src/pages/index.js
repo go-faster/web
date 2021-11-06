@@ -8,7 +8,7 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 
-function HomepageHeader() {
+const HomepageHeader = () => {
   const {siteConfig} = useDocusaurusContext();
   const {isDarkTheme} = useThemeContext();
   const logo = isDarkTheme ? 'logo_black_borderless.svg' : 'logo_white_borderless.svg';
@@ -35,7 +35,6 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title="go"
