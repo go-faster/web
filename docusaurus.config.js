@@ -14,6 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   organizationName: 'go-faster', // Usually your GitHub org/user name.
   projectName: 'web', // Usually your repo name.
+  favicon: 'favicon.ico',
 
   presets: [
     [
