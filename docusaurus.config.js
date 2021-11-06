@@ -29,14 +29,14 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/go-faster/web/edit/main/docs/',
+          editUrl: 'https://github.com/go-faster/web/edit/main/',
         },
         /* TODO(ernado): Enable blog back
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/gotd/docs/edit/main/blog/',
+            'https://github.com/gotd/docs/edit/main/',
         },
         */
         theme: {
