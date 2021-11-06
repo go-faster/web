@@ -3,17 +3,22 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useThemeContext from '@theme/hooks/useThemeContext';
+
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const {isDarkTheme} = useThemeContext();
+  const logo = isDarkTheme ? 'logo_black_borderless.svg' : 'logo_white_borderless.svg';
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
 
        <h1 className="hero__title">
-           <img width="105" src="logo_black_borderless.svg" alt="go faster logo"/>
+           <img width="105" src={ logo } alt="go faster logo"/>
            go faster
        </h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
