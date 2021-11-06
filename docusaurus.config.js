@@ -53,7 +53,7 @@ const config = {
         title: 'go faster',
         logo: {
           alt: 'go faster logo',
-          src: 'https://raw.githubusercontent.com/go-faster/.github/main/profile/logo.svg',
+          src: 'img/logo_borderless.svg',
         },
         items: [
           {
