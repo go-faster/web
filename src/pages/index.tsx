@@ -18,7 +18,7 @@ const HomepageHeader = () => {
 
        <h1 className="hero__title">
            <ThemedImage
-               width={105}
+               width={80}
                alt="go faster logo"
                sources={{
                    light: useBaseUrl('/img/logo_white_borderless.svg'),
