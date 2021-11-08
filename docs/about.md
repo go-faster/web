@@ -4,6 +4,6 @@ id: about
 title: about
 ---
 
-projects that are cause of high performance
+Projects that are cause of high performance.
 
-docs are in progress
+Docs are in progress.

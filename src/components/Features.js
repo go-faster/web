@@ -1,24 +1,24 @@
 import React from 'react';
 import clsx from 'clsx';
-import styles from './HomepageFeatures.module.css';
+import styles from './Features.module.css';
 
 const FeatureList = [
   {
-    title: 'fast',
+    title: 'Fast',
     description: (
-        <>designed to be fast</>
+        <>Designed to be quick and allocate less</>
     ),
   },
   {
-    title: 'tested',
+    title: 'Robust',
     description: (
-        <>secured with high test coverage</>
+        <>Secured with high test coverage</>
     ),
   },
   {
-    title: 'clear',
+    title: 'Clear',
     description: (
-        <>consistent and compact packages</>
+        <>Consistent, small, documented packages</>
     ),
   },
 ];
@@ -34,7 +34,8 @@ function Feature({title, description}) {
   );
 }
 
-export default function HomepageFeatures() {
+// Features of go-faster projects.
+export default function Features() {
   return (
     <section className={styles.features}>
       <div className="container">
