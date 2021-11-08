@@ -16,6 +16,19 @@
   --ifm-code-font-size: 95%;
 }
 
+:root[data-theme='light'] .hero__title {
+  --ifm-heading-color: black;
+}
+:root[data-theme='dark'] .hero__title {
+  --ifm-heading-color: white;
+}
+
+:root[data-theme='dark'] {
+  --ifm-font-color-base: #c9d1d9;
+  --ifm-background-color: rgb(12, 17, 23);
+  --ifm-background-surface-color: rgb(21, 27, 33);
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
   display: block;
