@@ -41,6 +41,6 @@ Projects that received a tangible contribution from go faster members.
 
 ![](https://avatars.githubusercontent.com/u/38192892?s=80&v=4)
 
-The WebRTC implementation in Go.
+The WebRTC implementation in Go: Open Source, Cross Platform Stack for Real-time Media and Data Communication.
 
 Contributed [pion/stun](https://github.com/pion/stun), STUN implementation in Go.
