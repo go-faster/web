@@ -30,7 +30,7 @@ Telegram client, server, telegram-bot-api in Go.
 
 ### [pion](https://github.com/orgs/pion)
 
-![](https://pion.ly/img/pion-logo.svg)
+![](https://avatars.githubusercontent.com/u/38192892?s=80&v=4)
 
 The WebRTC implementation in Go.
 
