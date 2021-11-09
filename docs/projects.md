@@ -1,10 +1,10 @@
 ---
 sidebar_position: 1
-id: about
-title: about
+id: projects
+title: projects
 ---
 
-Causing high performance in projects that we maintain or just love.
+Causing high performance in projects that we develop, maintain or just love.
 
 ## develop
 ### jx

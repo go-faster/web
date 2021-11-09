@@ -58,9 +58,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'about',
+            docId: 'projects',
             position: 'left',
-            label: 'about',
+            label: 'projects',
           },
           // TODO(ernado): Enable blog back
           // {to: '/blog', label: 'Blog', position: 'left'},

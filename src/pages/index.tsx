@@ -35,8 +35,8 @@ export default function Home() {
                             'button button--primary button--lg',
                             styles.getStarted,
                         )}
-                        to={useBaseUrl('docs/about')}>
-                        about
+                        to={useBaseUrl('docs/projects')}>
+                        projects
                     </Link>
                 </div>
             </div>
