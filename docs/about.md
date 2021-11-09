@@ -12,7 +12,7 @@ Causing high performance in projects that we maintain or just love.
 
 ![](https://avatars.githubusercontent.com/u/85122432?s=80&v=4)
 
-Next-gen OpenAPI v3 Code Generation project
+Next-gen OpenAPI v3 Code Generation project.
 
 ### [gotd](https://github.com/gotd/td)
 
