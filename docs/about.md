@@ -6,6 +6,12 @@ title: about
 
 Causing high performance in projects that we maintain or just love.
 
+## develop
+### jx
+Low-level, optimized json encoding and decoding
+### tail
+Optimal inotfy-based file tailing, ideal for log processing
+
 ## maintain
 
 ### [ogen](https://github.com/ogen-go/ogen)
