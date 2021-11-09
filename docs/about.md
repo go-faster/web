@@ -6,7 +6,7 @@ title: about
 
 Projects that are cause of high performance.
 
-## Maintain
+## maintain
 
 ### [ogen](https://github.com/ogen-go/ogen)
 
@@ -20,7 +20,7 @@ Next-gen OpenAPI v3 Code Generation project
 
 Telegram client, server, telegram-bot-api in Go.
 
-## Contributed
+## contributed
 
 ### [pion](https://github.com/orgs/pion)
 
