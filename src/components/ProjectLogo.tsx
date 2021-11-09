@@ -13,12 +13,13 @@ type LogoProps = {
 export const LogoSize = 100;
 
 export const ProjectLogo = ({src, link, alt="logo", height=LogoSize, width}: LogoProps): JSX.Element => {
-    let Image = () => (<img alt={alt} src={src} height={height} width={width}/>)
+    const Image = () => (<img alt={alt} src={src} height={height} width={width}/>)
+    let Logo = Image;
 
     if (link) {
-        Image = () => (<a href={link} about="Project link" target="_blank">
-            <img alt={alt} src={src} height={height} width={width}/>
+        Logo = () => (<a href={link} about="Project link" target="_blank">
+            <Image/>
         </a>)
     }
-    return <div className={styles.logo}><Image/></div>
+    return <div className={styles.logo}><Logo/></div>
 }
