@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-id: projects
-title: Projects
+id: list
+title: List
 ---
 
 Causing high performance in projects that we develop, maintain or just love.
