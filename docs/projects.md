@@ -1,12 +1,12 @@
 ---
 sidebar_position: 1
 id: projects
-title: projects
+title: Projects
 ---
 
 Causing high performance in projects that we develop, maintain or just love.
 
-## develop
+## Dev
 
 ![](https://avatars.githubusercontent.com/u/93744681?s=80&v=4)
 
@@ -17,7 +17,7 @@ Low-level, optimized json encoding and decoding.
 ### [tail](https://github.com/go-faster/tail)
 Zero-alloc inotfy-based file tailing, ideal for log processing.
 
-## maintain
+## Maintain
 
 Projects that are maintained by go faster.
 
@@ -33,7 +33,7 @@ Next-gen OpenAPI v3 Code Generation project.
 
 Telegram client, server, telegram-bot-api in Go.
 
-## contributed
+## Contribute
 
 Projects that received a tangible contribution from go faster members.
 
