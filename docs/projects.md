@@ -10,12 +10,16 @@ Causing high performance in projects that we develop, maintain or just love.
 
 ![](https://avatars.githubusercontent.com/u/93744681?s=80&v=4)
 
+Projects that are directly hosted in go faster org.
+
 ### [jx](https://github.com/go-faster/jx)
 Low-level, optimized json encoding and decoding
 ### [tail](https://github.com/go-faster/tail)
 Zero-alloc inotfy-based file tailing, ideal for log processing
 
 ## maintain
+
+Projects that are maintained by go faster.
 
 ### [ogen](https://github.com/ogen-go/ogen)
 
@@ -30,6 +34,8 @@ Next-gen OpenAPI v3 Code Generation project.
 Telegram client, server, telegram-bot-api in Go.
 
 ## contributed
+
+Projects that received a tangible contribution from go faster members.
 
 ### [pion](https://github.com/orgs/pion)
 
