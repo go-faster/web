@@ -7,6 +7,9 @@ title: projects
 Causing high performance in projects that we develop, maintain or just love.
 
 ## develop
+
+![](https://avatars.githubusercontent.com/u/93744681?s=80&v=4)
+
 ### [jx](https://github.com/go-faster/jx)
 Low-level, optimized json encoding and decoding
 ### [tail](https://github.com/go-faster/tail)
