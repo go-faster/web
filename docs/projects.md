@@ -10,7 +10,7 @@ Causing high performance in projects that we develop, maintain or just love.
 ### [jx](https://github.com/go-faster/jx)
 Low-level, optimized json encoding and decoding
 ### [tail](https://github.com/go-faster/tail)
-Optimal inotfy-based file tailing, ideal for log processing
+Zero-alloc inotfy-based file tailing, ideal for log processing
 
 ## maintain
 
