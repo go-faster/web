@@ -4,7 +4,7 @@ id: about
 title: about
 ---
 
-Projects that are cause of high performance.
+Causing high performance in projects that we maintain or just love.
 
 ## maintain
 
