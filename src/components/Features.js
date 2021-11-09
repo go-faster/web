@@ -10,9 +10,9 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Robust',
+    title: 'Reliable',
     description: (
-        <>Secured with high test coverage</>
+        <>Fuzzing and high coverage testing</>
     ),
   },
   {
