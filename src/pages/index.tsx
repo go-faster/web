@@ -35,7 +35,7 @@ export default function Home() {
                             'button button--primary button--lg',
                             styles.getStarted,
                         )}
-                        to={useBaseUrl('docs/projects')}>
+                        to={useBaseUrl('docs/projects/')}>
                         projects
                     </Link>
                 </div>

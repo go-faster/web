@@ -65,7 +65,7 @@ const config = {
           // TODO(ernado): Enable blog back
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: '/docs/slack',
+            href: '/docs/slack/',
             position: 'right',
             className: 'header-slack-link',
             'aria-label': 'Slack channel',
@@ -86,7 +86,7 @@ const config = {
             items: [
               {
                 label: 'projects',
-                to: '/docs/projects',
+                to: '/docs/projects/',
               },
             ],
           },
