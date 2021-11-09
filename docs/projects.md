@@ -7,9 +7,9 @@ title: projects
 Causing high performance in projects that we develop, maintain or just love.
 
 ## develop
-### jx
+### [jx](https://github.com/go-faster/jx)
 Low-level, optimized json encoding and decoding
-### tail
+### [tail](https://github.com/go-faster/tail)
 Optimal inotfy-based file tailing, ideal for log processing
 
 ## maintain
