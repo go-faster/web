@@ -22,8 +22,8 @@ export default function Home() {
                         width={80}
                         alt="go faster logo"
                         sources={{
-                            light: useBaseUrl('/img/logo_black_borderless.svg'),
-                            dark: useBaseUrl('/img/logo_white_borderless.svg'),
+                            light: useBaseUrl('/img/logo_borderless.svg'),
+                            dark: useBaseUrl('/img/logo_borderless.svg'),
                         }}
                     />
                     go faster
