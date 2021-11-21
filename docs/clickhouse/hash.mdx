@@ -34,16 +34,12 @@ reasoning behind creation. TL;DR **non-cryptographic** hash that is faster than 
 Let's take 64-bit hash from `Moscow` string.
 
 ```sql
-SELECT cityHash64('Moscow')
-┌─cityHash64('Moscow')─┐
-│ 12507901496292878638 │
-└──────────────────────┘
+:) SELECT cityHash64('Moscow')
+12507901496292878638
 ```
 ```sql
-SELECT farmHash64('Moscow')
-┌─farmHash64('Moscow')─┐
-│  5992710078453357409 │
-└──────────────────────┘
+:) SELECT farmHash64('Moscow')
+5992710078453357409
 ```
 
 ```go
