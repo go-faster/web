@@ -1,0 +1,55 @@
+---
+sidebar_position: 3
+id: wire
+title: Wire protocol
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+This document describes binary protocol for ClickHouse TCP clients.
+
+## Varint
+
+For lengths, packet codes and other cases the *unsigned varint* encoding is used.
+Use [binary.PutUvarint](https://pkg.go.dev/encoding/binary#PutUvarint) and [binary.Uvarint](https://pkg.go.dev/encoding/binary#Uvarint).
+
+:::info Note
+
+*Signed* varint is not used.
+
+:::
+
+## String
+
+Variable length strings are encoded as *(length, value)*, where *length* is [varint](#varint) and *value* is utf8 string.
+
+
+```go
+s := "Hello, world!"
+
+// Writing string length as uvarint.
+buf := make([]byte, binary.MaxVarintLen64)
+n := binary.PutUvarint(buf, uint64(len(s)))
+buf = buf[:n]
+
+// Writing string value.
+buf = append(buf, s...)
+```
+
+<Tabs>
+<TabItem value="hexdump" label="Hex dump">
+
+```hexdump
+00000000  0d 48 65 6c 6c 6f 2c 20  77 6f 72 6c 64 21        |.Hello, world!|
+```
+
+</TabItem>
+<TabItem value="base64" label="Base64">
+
+```text
+DUhlbGxvLCB3b3JsZCE
+```
+
+</TabItem>
+</Tabs>
