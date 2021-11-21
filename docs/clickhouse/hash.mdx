@@ -55,31 +55,32 @@ fmt.Println(city.Hash64(s))
 ```
 
 You can use [test data corpus](https://github.com/go-faster/city/blob/main/_testdata/data.json) to check your implementation of ClickHouse CityHash variant if needed.
-It has the following format, where uint128 values are represented by base64std encoded big endian byte slices.
 
 ```json
 {
   "seed": "TWWCIQf8/VJ4YpoPXz8WTw==",
   "entries": [
     {
-      "input": "Moscow",
-      "city_32": 431367057,
-      "city_64": "5992710078453357409",
-      "city_128": "iw1jLVJPz1uqXwu2RS7V2A==",
-      "city_128_seed": "uenPRvl3OchMciOCzlDYYA==",
-      "clickhouse_64": "12507901496292878638",
-      "clickhouse_128": "Lt8Xv+4+320irvMFxkCdVQ==",
-      "clickhouse_128_seed": "B+KKOXBhwPIX3a2antH7jg=="
-    },
-    {
-      "input": "ClickHouse",
-      "city_32": 1586074392,
-      "city_64": "4321509792407916471",
-      "city_128": "g6eeOX/r90TjYuZqq2krhg==",
-      "city_128_seed": "K+TPnO24VhYDXE5xQ1T5kg==",
-      "clickhouse_64": "12904064065176299341",
-      "clickhouse_128": "NwTMgcALthJ21DrEuvkUAg==",
-      "clickhouse_128_seed": "owZBLVQ2eIBFc15WWY1mzQ=="
+      "Input": "Moscow",
+      "City32": 431367057,
+      "City64": 5992710078453357409,
+      "City128": {
+        "Low": 10019773792274861915,
+        "High": 12276543986707912152
+      },
+      "City128Seed": {
+        "Low": 13396466470330251720,
+        "High": 5508504338941663328
+      },
+      "ClickHouse64": 12507901496292878638,
+      "ClickHouse128": {
+        "Low": 3377444358654451565,
+        "High": 2499202049363713365
+      },
+      "ClickHouse128Seed": {
+        "Low": 568168482305327346,
+        "High": 1719721512326527886
+      }
     }
   ]
 }
