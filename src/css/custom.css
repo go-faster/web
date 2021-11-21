@@ -5,6 +5,9 @@
  */
 
 /* You can override the default Infima variables here. */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
 :root {
   --ifm-color-primary: #00ADD8;
   --ifm-color-primary-dark: rgb(0, 117, 138);
@@ -14,6 +17,8 @@
   --ifm-color-primary-lighter: rgb(28, 198, 223);
   --ifm-color-primary-lightest: rgb(79, 203, 227);
   --ifm-code-font-size: 95%;
+
+  --ifm-font-family-monospace: 'Source Code Pro', monospace;
 }
 
 :root[data-theme='light'] .hero__title {
