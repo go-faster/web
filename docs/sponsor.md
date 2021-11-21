@@ -1,7 +1,7 @@
 ---
 id: sponsor
 title: Sponsor
-position: 3
+position: 4
 ---
 
 The *go faster* project is fully open source, non-commercial and vendor-neutral, so solely relies on personal funds or sponsors
