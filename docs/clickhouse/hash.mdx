@@ -20,7 +20,12 @@ But as we exposed this function to the user, we had to fix the version of CityHa
 
 Current version of Google's CityHash [differs](https://github.com/ClickHouse/ClickHouse/issues/8354) from ClickHouse `cityHash64` variant.
 
-Use `farmHash64` function to get Google's CityHash value.
+Don't use `farmHash64` to get Google's CityHash value! [FarmHash](https://opensource.googleblog.com/2014/03/introducing-farmhash.html) is a successor to CityHash, but they are not fully compatible.
+
+| String                                                     | ClickHouse64         | CityHash64           | FarmHash64           |
+| ---------------------------------------------------------- | -------------------- | -------------------- | -------------------- |
+| `Moscow`                                                   | 12507901496292878638 | 5992710078453357409  | 5992710078453357409  |
+| `How can you write a big system without C++?  -Paul Glick` | 6237945311650045625  | 749291162957442504   | 11716470977470720228 |
 
 :::
 
@@ -37,9 +42,6 @@ Let's take 64-bit hash from `Moscow` string.
 :) SELECT cityHash64('Moscow')
 12507901496292878638
 ```
-```sql
-:) SELECT farmHash64('Moscow')
-5992710078453357409
 ```
 
 ```go
