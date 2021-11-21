@@ -8,14 +8,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
+/* https://docusaurus.io/docs/styling-layout#styling-your-site-with-infima */
 :root {
-  --ifm-color-primary: #00ADD8;
-  --ifm-color-primary-dark: rgb(0, 117, 138);
-  --ifm-color-primary-darker: rgb(0, 117, 138);
-  --ifm-color-primary-darkest: #00758D;
-  --ifm-color-primary-light: rgb(0, 182, 214);
-  --ifm-color-primary-lighter: rgb(28, 198, 223);
-  --ifm-color-primary-lightest: rgb(79, 203, 227);
+  --ifm-color-primary: #00add8;
+  --ifm-color-primary-dark: #009cc2;
+  --ifm-color-primary-darker: #0093b8;
+  --ifm-color-primary-darkest: #007997;
+  --ifm-color-primary-light: #00beee;
+  --ifm-color-primary-lighter: #00c7f8;
+  --ifm-color-primary-lightest: #1ad1ff;
   --ifm-code-font-size: 95%;
 
   --ifm-font-family-monospace: 'Source Code Pro', monospace;
