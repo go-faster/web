@@ -1,0 +1,14 @@
+---
+sidebar_position: 2
+id: hash
+title: CityHash
+---
+
+ClickHouse uses **one of previous** versions of [CityHash from Google](https://github.com/google/cityhash).
+
+Current version of Google's CityHash **differs** from ClickHouse variant.
+
+You can use [go-faster/city](https://github.com/go-faster/city) Go package that implements both variants.
+
+Also see [Introducing CityHash](https://opensource.googleblog.com/2011/04/introducing-cityhash.html) for description and
+reasoning behind creation. TL;DR **non-cryptographic** hash that is faster than [MurmurHash](http://en.wikipedia.org/wiki/MurmurHash), but more complex.
