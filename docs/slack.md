@@ -1,7 +1,7 @@
 ---
 id: slack
 title: Slack channel
-position: 5
+sidebar_position: 4
 ---
 
 Use `#faster` channel in the Gophers Slack workspace.
