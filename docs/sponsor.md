@@ -9,7 +9,7 @@ to maintain infrastructure.
 
 ## Servers
 
-While most of CI/CD is free for open source, *go faster* maintains high standards on testing and security that require
+While most of CI/CD are free for open source, *go faster* maintains high standards on testing and security. It requires
 more advanced pipelines or runners.
 
 Currently, we are hosting Linux/**ARM64** GitHub Actions Runner to ensure that critical projects are tested on this architecture.
@@ -30,7 +30,7 @@ Also, this is a pre-requisite for open source continuous fuzzing system for Go.
 ### Benchmarks
 
 We can run benchmarks (automated and manual) for our projects (HTTP server, JSON marshaling, ClickHouse client).
-Ideally this should be done on performant dedicated servers, probably even multiple servers with good and fast local networking
+Ideally this should be done on performant dedicated servers, probably even multiple servers with stable and fast local networking
 connectivity (10G or more).
 
 This is a pre-requisite for open source continuous benchmarking system for Go.
