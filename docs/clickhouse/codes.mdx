@@ -1,0 +1,38 @@
+---
+sidebar_position: 4
+id: codes
+title: Codes
+---
+
+Codes are encoded as [unsigned varint](./basics.mdx#varint).
+
+## Client
+
+| value | name        | description                       |
+|-------|-------------|-----------------------------------|
+| 0     | Hello       | Client handshake start            |
+| 1     | Query       | Query request                     |
+| 2     | Data        | Block with data                   |
+| 3     | Cancel      | Cancel query                      |
+| 4     | Ping        | Ping request                      |
+| 5     | TableStatus | Table status request              |
+
+The `Data` can be compressed.
+
+## Server
+
+| value | name                  | description                       |
+|-------|-----------------------|-----------------------------------|
+| 0     | Hello                 | Server handshake response         |
+| 1     | Data                  | Block with data                   |
+| 2     | Exception             | Query processing exception        |
+| 3     | Progress              | Query progress                    |
+| 4     | Pong                  | Ping response                     |
+| 5     | EndOfStream           | All packets were transferred      |
+| 6     | ProfileInfo           | Profiling data                    |
+| 7     | Totals                | Total values                      |
+| 8     | Extremes              | Extreme values (min, max)         |
+| 9     | TablesStatusResponse  | Response to TableStatus request   |
+| 10    | Log                   | Query system log                  |
+
+The `Data`, `Totals` and `Extremes` can be compressed.
