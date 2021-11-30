@@ -70,7 +70,7 @@ buf := make([]byte, 8)
 binary.LittleEndian.PutUint32(buf, uint32(v))
 
 // Decode.
-d := binary.LittleEndian.Uint32(buf)
+d := int32(binary.LittleEndian.Uint32(buf))
 fmt.Println(d) // 1000
 ```
 
