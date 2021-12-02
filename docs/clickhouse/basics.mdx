@@ -12,7 +12,7 @@ This document describes binary protocol for ClickHouse TCP clients.
 ## Varint
 
 For lengths, packet codes and other cases the *unsigned varint* encoding is used.
-Use [binary.PutUvarint](https://pkg.go.dev/encoding/binary#PutUvarint) and [binary.Uvarint](https://pkg.go.dev/encoding/binary#Uvarint).
+Use [binary.PutUvarint](https://pkg.go.dev/encoding/binary#PutUvarint) and [binary.ReadUvarint](https://pkg.go.dev/encoding/binary#ReadUvarint).
 
 :::note
 
