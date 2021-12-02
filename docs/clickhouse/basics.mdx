@@ -14,7 +14,7 @@ This document describes binary protocol for ClickHouse TCP clients.
 For lengths, packet codes and other cases the *unsigned varint* encoding is used.
 Use [binary.PutUvarint](https://pkg.go.dev/encoding/binary#PutUvarint) and [binary.Uvarint](https://pkg.go.dev/encoding/binary#Uvarint).
 
-:::info Note
+:::note
 
 *Signed* varint is not used.
 
@@ -24,6 +24,14 @@ Use [binary.PutUvarint](https://pkg.go.dev/encoding/binary#PutUvarint) and [bina
 
 Variable length strings are encoded as *(length, value)*, where *length* is [varint](#varint) and *value* is utf8 string.
 
+:::caution
+
+Validate length to prevent OOM: `0 ≤ len < MAX`
+
+:::
+
+<Tabs>
+<TabItem value="encode" label="Encode">
 
 ```go
 s := "Hello, world!"
@@ -36,6 +44,39 @@ buf = buf[:n]
 // Writing string value.
 buf = append(buf, s...)
 ```
+
+</TabItem>
+<TabItem value="decode" label="Decode">
+
+```go
+r := bytes.NewReader([]byte{
+    0xd, 0x48, 0x65, 0x6c, 0x6c, 0x6f, 0x2c,
+    0x20, 0x77, 0x6f, 0x72, 0x6c, 0x64, 0x21,
+})
+
+// Read length.
+n, err := binary.ReadUvarint(r)
+if err != nil {
+	panic(err)
+}
+
+// Check n to prevent OOM or runtime exception in make().
+const maxSize = 1024 * 1024 * 10 // 10 MB
+if n > maxSize || n < 0 {
+    panic("invalid n")
+}
+
+buf := make([]byte, n)
+if _, err := io.ReadFull(r, buf); err != nil {
+	panic(err)
+}
+
+fmt.Println(string(buf))
+// Hello, world!
+```
+
+</TabItem>
+</Tabs>
 
 <Tabs>
 <TabItem value="hexdump" label="Hex dump">
@@ -54,14 +95,15 @@ DUhlbGxvLCB3b3JsZCE
 </TabItem>
 </Tabs>
 
-## Int32
+## Integers
 
-:::info Note
+:::tip
 
 ClickHouse uses **Little Endian** for fixed size integers.
 
 :::
 
+### Int32
 ```go
 v := int32(1000)
 
