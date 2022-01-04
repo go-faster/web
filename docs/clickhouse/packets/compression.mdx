@@ -28,13 +28,13 @@ From [facebook benchmarks](https://facebook.github.io/zstd/#benchmarks):
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import {Diagram} from "../../../src/components/Diagram";
 
-| field           | type    | value                              | description                                       |
-|-----------------|---------|------------------------------------|---------------------------------------------------|
-| checksum        | uint128 | `6ddf3eeebf17df2e559d40c605f3ae22` | [Hash](../hash.mdx) of (header + compressed data) |
-| raw_size        | uint32  | 251                                | Raw size without header                           |
-| data_size       | uint32  | 1254                               | Uncompressed data size                            |
-| mode            | byte    | `0x82`                             | Compression mode                                  |
-| compressed_data | binary  | Byte slice                         | Block of compressed data                          |
+| field           | type    | description                                       |
+|-----------------|---------|---------------------------------------------------|
+| checksum        | uint128 | [Hash](../hash.mdx) of (header + compressed data) |
+| raw_size        | uint32  | Raw size without header                           |
+| data_size       | uint32  | Uncompressed data size                            |
+| mode            | byte    | Compression mode                                  |
+| compressed_data | binary  | Block of compressed data                          |
 
 <Diagram src={useBaseUrl('/img/diagrams/ch_compression_block.drawio.svg')}/>
 
