@@ -38,9 +38,9 @@ import {Diagram} from "../../../src/components/Diagram";
 
 <Diagram src={useBaseUrl('/img/diagrams/ch_compression_block.drawio.svg')}/>
 
-Header is (raw_size + data_size + mode), raw size consists of len(header + compressed data).
+Header is (raw_size + data_size + mode), raw size consists of len(header + compressed_data).
 
-Checksum is `hash(header + compressed data)`, using [ClickHouse CityHash](../hash.mdx).
+Checksum is `hash(header + compressed_data)`, using [ClickHouse CityHash](../hash.mdx).
 
 ## None mode
 
