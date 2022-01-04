@@ -1,0 +1,23 @@
+---
+sidebar_position: 4
+id: compression
+title: Compression
+---
+
+ClickHouse protocol supports **data blocks** compression with checksums.
+
+## Modes
+
+| value  | name | description                              |
+|--------|------|------------------------------------------|
+| `0x02` | None | No compression, only checksums           |
+| `0x82` | LZ4  | LZ4, extremely fast, good compression    |
+| `0x90` | ZSTD | Zstandard, pretty fast, best compression |
+
+Both LZ4 and ZSTD are made by same author, but with different tradeoffs.
+From [facebook benchmarks](https://facebook.github.io/zstd/#benchmarks):
+
+| name          | ratio | encoding | decoding  |
+|---------------|-------|----------|-----------|
+| zstd 1.4.5 -1 | 2.8   | 500 MB/s | 1660 MB/s |
+| lz4 1.9.2     | 2.1   | 740 MB/s | 4530 MB/s |
