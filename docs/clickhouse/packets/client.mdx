@@ -102,6 +102,21 @@ Encoded as list, blank key and value denotes end of list.
 
 ## Data
 
+| field   | type                | description        |
+|---------|---------------------|--------------------|
+| info    | BlockInfo           | Encoded block info |
+| columns | UVarInt             | Columns count      |
+| rows    | UVarInt             | Rows count         |
+| columns | [[]Column](#column) | Columns with data  |
+
+### Column
+
+| field | type   | value           | description |
+|-------|--------|-----------------|-------------|
+| name  | String | `foo`           | Column name |
+| type  | String | `DateTime64(9)` | Column type |
+| data  | bytes  | ~               | Column data |
+
 ## Cancel
 
 No packet body. Server should cancel query.
