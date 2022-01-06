@@ -5,3 +5,23 @@ title: Server packets
 ---
 
 Server packets
+
+| value | name                 | description                                                     |
+|-------|----------------------|-----------------------------------------------------------------|
+| 0     | Hello                | Server handshake response                                       |
+| 1     | Data                 | Block with data                                                 |
+| 2     | Exception            | Query processing exception                                      |
+| 3     | Progress             | Query progress                                                  |
+| 4     | Pong                 | Ping response                                                   |
+| 5     | EndOfStream          | All packets were transferred                                    |
+| 6     | ProfileInfo          | Profiling data                                                  |
+| 7     | Totals               | Total values                                                    |
+| 8     | Extremes             | Extreme values (min, max)                                       |
+| 9     | TablesStatusResponse | Response to TableStatus request                                 |
+| 10    | Log                  | Query system log                                                |
+| 11    | TableColumns         | Columns description                                             |
+| 12    | UUIDs                | List of unique parts ids                                        |
+| 13    | ReadTaskRequest      | String (UUID) describes a request for which next task is needed |
+| 14    | ProfileEvents        | Packet with profile events from server                          |
+
+The `Data`, `Totals` and `Extremes` can be compressed.
