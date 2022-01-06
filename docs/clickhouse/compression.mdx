@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 id: compression
 title: Compression
 ---
@@ -26,21 +26,21 @@ From [facebook benchmarks](https://facebook.github.io/zstd/#benchmarks):
 ## Block
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import {Diagram} from "../../../src/components/Diagram";
+import {Diagram} from "../../src/components/Diagram";
 
-| field           | type    | description                                       |
-|-----------------|---------|---------------------------------------------------|
-| checksum        | uint128 | [Hash](../hash.mdx) of (header + compressed data) |
-| raw_size        | uint32  | Raw size without header                           |
-| data_size       | uint32  | Uncompressed data size                            |
-| mode            | byte    | Compression mode                                  |
-| compressed_data | binary  | Block of compressed data                          |
+| field           | type    | description                                      |
+|-----------------|---------|--------------------------------------------------|
+| checksum        | uint128 | [Hash](./hash.mdx) of (header + compressed data) |
+| raw_size        | uint32  | Raw size without header                          |
+| data_size       | uint32  | Uncompressed data size                           |
+| mode            | byte    | Compression mode                                 |
+| compressed_data | binary  | Block of compressed data                         |
 
 <Diagram src={useBaseUrl('/img/diagrams/ch_compression_block.drawio.svg')}/>
 
 Header is (raw_size + data_size + mode), raw size consists of len(header + compressed_data).
 
-Checksum is `hash(header + compressed_data)`, using [ClickHouse CityHash](../hash.mdx).
+Checksum is `hash(header + compressed_data)`, using [ClickHouse CityHash](./hash.mdx).
 
 ## None mode
 
