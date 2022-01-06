@@ -45,15 +45,15 @@ password as defaults.
 
 ## Query
 
-| field           | type                      | value      | description               |
-|-----------------|---------------------------|------------|---------------------------|
-| query_id        | String                    | `1ff-a123` | Query ID, can be UUIDv4   |
-| client_info     | [ClientInfo](#clientinfo) | See type   | Data about client         |
-| settings        | [Settings](#settings)     | See type   | List of settings          |
-| secret          | String                    | `secret`   | Inter-server secret       |
-| [stage](#stage) | UVarInt                   | `2`        | Execute until query stage |
-| compression     | UVarInt                   | `0`        | Disabled=0, enabled=1     |
-| body            | String                    | `SELECT 1` | Query text                |
+| field           | type                       | value      | description               |
+|-----------------|----------------------------|------------|---------------------------|
+| query_id        | String                     | `1ff-a123` | Query ID, can be UUIDv4   |
+| client_info     | [ClientInfo](#client-info) | See type   | Data about client         |
+| settings        | [Settings](#settings)      | See type   | List of settings          |
+| secret          | String                     | `secret`   | Inter-server secret       |
+| [stage](#stage) | UVarInt                    | `2`        | Execute until query stage |
+| compression     | UVarInt                    | `0`        | Disabled=0, enabled=1     |
+| body            | String                     | `SELECT 1` | Query text                |
 
 ### Client info
 
