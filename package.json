@@ -20,7 +20,7 @@
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^6.2.1",
     "@tsconfig/docusaurus": "^1.0.5",
-    "@types/react": "^18.0.6",
+    "@types/react": "^18.0.7",
     "classnames": "^2.3.1",
     "clsx": "^1.1.1",
     "file-loader": "^6.2.0",
