@@ -5,19 +5,19 @@ title: Intro
 slug: /clickhouse
 ---
 
-We are building [ClickHouse Client](https://github.com/go-faster/ch) that uses binary protocol and talks to server by TCP.
+We are maintaining [Official Low-Level ClickHouse Client](https://github.com/ClickHouse/ch-go) that uses binary protocol and talks to server by TCP.
 
 There is no reference for binary protocol, so we've decided to create one.
 
 :::info
-Documentation is still under construction, but [our go implementation](https://github.com/go-faster/ch/tree/main/proto)
-fully implements protocol (bot server and client side) with necessary test vectors.
+Documentation is still under construction, but [go implementation](https://github.com/ClickHouse/ch-go/tree/main/proto)
+fully implements protocol (bot server and client side) with necessary test vectors and can be used as reference.
 :::
 
 ## Implementations
 
 We've used C++, Python and Go implementations as reference.
 
-* [Official Go client](https://github.com/ClickHouse/clickhouse-go)
+* [Official High-level Go client](https://github.com/ClickHouse/clickhouse-go)
 * [C++ client](https://github.com/ClickHouse/clickhouse-cpp)
 * [Python client](https://github.com/mymarilyn/clickhouse-driver)
