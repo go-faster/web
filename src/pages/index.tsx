@@ -28,7 +28,11 @@ export default function Home() {
                     />
                     go faster
                 </h1>
+
+                <p>We are group of people united by the love to open source software and desire to make Go faster.</p>
+
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
+
                 <div className={styles.buttons}>
                     <Link
                         className={classnames(

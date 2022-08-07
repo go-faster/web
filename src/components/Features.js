@@ -4,21 +4,27 @@ import styles from './Features.module.css';
 
 const FeatureList = [
   {
-    title: 'Fast',
+    title: 'Maintaining',
     description: (
-        <>Designed to be quick and allocate less</>
+        <>Maintain high quality projects governed by Go Faster.</>
     ),
   },
   {
-    title: 'Reliable',
+    title: 'Contributing',
     description: (
-        <>Fuzzing and high coverage testing</>
+        <>Apply knowledge and experience to improve open source. Fix bugs, contribute features, improve performance.</>
     ),
   },
   {
-    title: 'Clear',
+    title: 'Participating',
     description: (
-        <>Consistent, small, documented packages</>
+        <>Participate in the development of Go, reporting bugs, bisect causes, contribute to Go itself.</>
+    ),
+  },
+  {
+    title: 'Sharing',
+    description: (
+      <>Accumulate experience, structure knowledge, share it with others.</>
     ),
   },
 ];
