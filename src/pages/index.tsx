@@ -29,7 +29,7 @@ export default function Home() {
                     go faster
                 </h1>
 
-                <p>We are group of people united by the love to open source software and desire to make Go faster.</p>
+                <p>Group of people united by the love to open source software and desire to make Go faster</p>
 
                 <p className="hero__subtitle">{siteConfig.tagline}</p>
 
@@ -40,7 +40,7 @@ export default function Home() {
                             styles.getStarted,
                         )}
                         to={useBaseUrl('docs/projects/')}>
-                        projects
+                        See projects
                     </Link>
                 </div>
             </div>

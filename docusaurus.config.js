@@ -4,7 +4,7 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'faster',
-  tagline: 'causing performance',
+  tagline: 'Causing Performance, Asserting Go Domination',
   url: 'https://go-faster.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
