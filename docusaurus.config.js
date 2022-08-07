@@ -62,10 +62,10 @@ const config = {
           // TODO(ernado): Enable blog back
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: '/docs/slack/',
+            href: '/docs/telegram/',
             position: 'right',
-            className: 'header-slack-link',
-            'aria-label': 'Slack channel',
+            className: 'header-telegram-link',
+            'aria-label': 'Telegram Group',
           },
           {
             href: 'https://github.com/go-faster',
