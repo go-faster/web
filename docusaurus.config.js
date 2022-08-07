@@ -79,32 +79,36 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'docs',
+            title: 'Docs',
             items: [
               {
-                label: 'projects',
+                label: 'Our projects',
                 to: '/docs/projects/',
               },
             ],
           },
           {
-            title: 'community',
+            title: 'Community',
             items: [
               {
-                label: 'telegram',
+                label: 'Telegram Chat',
                 href: 'https://t.me/go_faster_dev',
+              },
+              {
+                label: 'Telegram News Channel',
+                href: 'https://t.me/go_faster_news',
               }
             ],
           },
           {
-            title: 'more',
+            title: 'More',
             items: [
               // {
               //   label: 'Blog',
               //   to: '/blog',
               // },
               {
-                label: 'github',
+                label: 'GitHub',
                 href: 'https://github.com/go-faster',
               },
             ],

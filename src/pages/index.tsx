@@ -40,7 +40,7 @@ export default function Home() {
                             styles.getStarted,
                         )}
                         to={useBaseUrl('docs/projects/')}>
-                        See projects
+                        Our Projects
                     </Link>
                 </div>
             </div>
