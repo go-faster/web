@@ -9,7 +9,7 @@
     <icon>https://go-faster.org/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[First Blog Post]]></title>
-        <id>first-blog-post</id>
+        <id>https://go-faster.org/blog/first-blog-post</id>
         <link href="https://go-faster.org/blog/first-blog-post"/>
         <updated>2021-11-03T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hello, world]]></summary>
