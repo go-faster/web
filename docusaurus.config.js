@@ -59,8 +59,7 @@ const config = {
             position: 'left',
             label: 'projects',
           },
-          // TODO(ernado): Enable blog back
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'blog', position: 'left'},
           {
             href: '/docs/telegram/',
             position: 'right',
@@ -103,10 +102,10 @@ const config = {
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/go-faster',
