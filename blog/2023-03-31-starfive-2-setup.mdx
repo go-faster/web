@@ -204,3 +204,18 @@ fdisk /dev/nvme0n1
 After that, run `e2fsck -f /dev/nvme0n4p` again and `resize2fs /dev/nvme0n1p4` to resize partition.
 
 To be sure, run `e2fsck` again.
+
+## Bonus
+
+Networking works pretty well:
+
+```
+root@starfive:~# iperf -c 192.168.50.114
+------------------------------------------------------------
+Client connecting to 192.168.50.114, TCP port 5001
+TCP window size: 16.0 KByte (default)
+------------------------------------------------------------
+[  1] local 192.168.50.140 port 41680 connected with 192.168.50.114 port 5001 (icwnd/mss/irtt=14/1448/721)
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-10.0249 sec  1.04 GBytes   894 Mbits/sec
+```
