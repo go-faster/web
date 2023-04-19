@@ -193,7 +193,7 @@ tune2fs -O metadata_csum_seed -U random /dev/mmcblk1p4
 You probably want to resize your SSD partition:
 
 ```
-e2fsck -f /dev/nvme0n4p
+e2fsck -f /dev/nvme0n1p4
 ```
 
 To do this, use `fdisk`. Delete your `root` partiton (`d`) and re-add it (`n`):
