@@ -133,6 +133,20 @@ This can take some time.
 
 ## SSD
 
+:::caution
+
+The NVME SSD support is pretty unstable, sometimes the system can't find a device.
+
+Most of the time you should just reboot your devboard and this will be resolved.
+If not, try re-connecting your SSD to M2 slot, sometimes contacts just does not match.
+
+Anyway, problems with SSDs are pretty normal and I find myself re-flashing SD cards pretty often to fix it.
+
+Also, system can freeze in the middle of some IO intensive task, like `apt-get upgrade`.
+Probably it is due to overheat, but I'm not sure.
+
+:::
+
 
 ### Backup
 
@@ -154,6 +168,15 @@ how to shrink resulting image.
 ### Copy partitions
 
 Refer to original [guide][guide-ssd].
+
+When doing
+
+```bash
+cat /dev/mmcblk1 > /dev/nvme0n1
+```
+
+This will take some time. This is roughly 10 megabytes per second, and this will copy full SD card to SSD,
+not just partitions (so shrinking does not help, only using smaller SD card).
 
 :::caution
 
