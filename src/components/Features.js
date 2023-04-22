@@ -27,6 +27,12 @@ const FeatureList = [
       <>Accumulate experience, structure knowledge, share it with others.</>
     ),
   },
+  {
+    title: 'Non-profit',
+    description: (
+      <>Go Faster is a non-profit, non-commercial organization and do not accept financial donations.</>
+    ),
+  }
 ];
 
 function Feature({title, description}) {
