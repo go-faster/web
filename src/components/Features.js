@@ -32,6 +32,12 @@ const FeatureList = [
     description: (
       <>Go Faster is a non-profit, non-commercial organization and do not accept financial donations.</>
     ),
+  },
+  {
+    title: 'Open',
+    description: (
+      <>Projects will be always open, permissive-licensed and without any paid version.</>
+    ),
   }
 ];
 
