@@ -18,7 +18,7 @@
     "@docusaurus/module-type-aliases": "^2.4.3",
     "@docusaurus/plugin-google-analytics": "^2.4.3",
     "@docusaurus/preset-classic": "^2.4.3",
-    "@mdx-js/react": "^1.6.21",
+    "@mdx-js/react": "^3.0.0",
     "@svgr/webpack": "^8.1.0",
     "@tsconfig/docusaurus": "^2.0.2",
     "@types/react": "^18.0.9",
