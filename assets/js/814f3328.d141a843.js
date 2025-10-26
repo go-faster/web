@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkgo_faster_docs=globalThis.webpackChunkgo_faster_docs||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Booting StarFive VisionFive 2: images, firmware updates and NVME SSD","permalink":"/blog/visionfive-2-setup"}]}')}}]);
